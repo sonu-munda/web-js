@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title> table</title>
+    </head>
+    <body>
+        <input type="text" id="number" value="">
+        <input type="text" id="number2" value="">
+        <input type="button" onclick="main();" id="button" value="click">
+        <p id="text"></p> 
+    </body>
+    <script>
+        function main()
+        {
+            var i=1,n,n2,tab1,tab2,r;
+            tab1=document.getElementById("number").value;
+            tab2=document.getElementById("number2").value;
+            n=parseInt(tab1);
+            n2=parseInt(tab2)
+            console.log(n);
+            console.log(n2);
+            for(i=1;i<=10;i++)
+            {
+
+                r=console.log(n*i);
+                document.getElementById("text").innerText+=n+" x"+i+" ="+tab1+"\t\t"+n2+" x"+i+" ="+tab2+"\n";
+                
+            }
+           
+        }
+
+
+    </script>
+</html>
