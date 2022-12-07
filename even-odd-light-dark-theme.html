@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>My First Web</title>
+  </head>  
+  <body id="back">
+    <center>
+    <h1 style="color:black" id="head"><u> Your Mode</u></h1>
+   <input type="text" id="texty" value=""><br><br>
+    <input type="button" onclick="main();" value="click">
+    <p id="showingid"></p>
+</center>
+</body>
+<script>
+    function main()
+    {
+        let n,r, x;
+       x=document.getElementById("texty").value;
+        n=parseInt(x);
+        console.log(n);
+        console.log(typeof(n));
+
+        if(n%2==0)
+        {
+            console.log(r);
+           document.getElementById("showingid").innerText ="EVEN";
+           document.getElementById("showingid").style.fontSize="100px";
+           document.getElementById("showingid").style.color="black";
+           document.getElementById("head").style.color="black";
+           document.body.style.backgroundColor="White";
+        }
+        else
+        {
+            console.log(r);
+            document.getElementById("showingid").innerHTML="ODD";
+            document.getElementById("showingid").style.fontSize="100px";
+            document.getElementById("showingid").style.color="white";
+            document.body.style.backgroundColor="Black";
+            document.getElementById("head").style.color="white";
+    
+        }
+
+    }
+</script>
+</html>
